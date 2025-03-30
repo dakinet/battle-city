@@ -1,0 +1,25 @@
+{
+  "name": "battle-city-multiplayer",
+  "version": "1.0.0",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"cd client && npm start\"",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.4.1",
+    "cors": "^2.8.5",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
